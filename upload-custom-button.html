@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Javascript Basic
+        </title>
+        <style >
+                #btnCustom {
+                    background-color: aquamarine;
+                }
+        </style>
+      
+    </head>
+    <body>
+        <input type="file" hidden id="btnFileOrginal">
+
+        <input type="button" id="btnCustom" value="Upload">
+        <span id="spanText">No file chosen yet.</span>
+        <script type="text/javascript">
+            const btnFileOrginal = document.getElementById('btnFileOrginal');
+            const btnCustom = document.getElementById('btnCustom');
+            const spanText = document.getElementById('spanText');
+                
+            btnCustom.addEventListener("click",function(){
+                btnFileOrginal.click();
+            })
+
+            btnFileOrginal.addEventListener('change',function(){
+                if(btnFileOrginal.value){
+                    spanText.innerHTML = btnFileOrginal.value
+                }else{
+                    spanText.innerHTML = "No file chosen yet.";
+                }
+            })
+
+
+           
+
+        </script>    
+    </body>
+</html>

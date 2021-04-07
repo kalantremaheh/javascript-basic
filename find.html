@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Javascript Basic
+        </title>
+        
+      
+    </head>
+    <body>
+       
+        <h2 id="number">
+            0
+        </h2>
+           
+        <script type="text/javascript"> 
+          
+        let mydetails = [
+            {name:'abc',address:'pune'},
+            {name:'pqr',address:'nagpur'},
+            {name:'xyz',address:'nasik'}
+        ];
+
+        function toFind(person){
+            return person.address == 'nasik';
+        }
+
+        console.log(mydetails.find(toFind));
+
+           
+        </script>    
+    </body>
+</html>

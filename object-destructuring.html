@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Javascript Basic
+        </title>
+        
+      
+    </head>
+    <body>
+       
+
+           
+        <script type="text/javascript"> 
+          
+          const person = {
+              name: 'mahesh',
+              age: 31,
+              address: 'pune'
+          }
+          
+          let {name, age, address='Nasik'} = person;
+          console.log('-----name-----',name);
+          console.log('-----age-----',age);
+          console.log('-----address-----',address);
+
+          function myDetails({name,age}){
+            console.log('------function---',name);
+          }
+
+          myDetails(person);
+
+
+        </script>    
+    </body>
+</html>

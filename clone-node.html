@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Javascript Basic
+        </title>
+        
+      
+    </head>
+    <body>
+       
+      <ul id="myList">
+          <li>A</li>
+          <li>B</li>
+          <li>C</li>
+          <li>D</li>
+      </ul>
+           
+        <script type="text/javascript"> 
+
+            let myList = document.getElementById('myList');
+            console.log('-------',myList);
+            let listChild = myList.children;
+            let itemBanana = listChild[1];
+            myList.appendChild(itemBanana.cloneNode(true))
+           
+        </script>    
+    </body>
+</html>

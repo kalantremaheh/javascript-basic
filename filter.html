@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Javascript Basic
+    </title>
+
+
+</head>
+
+<body>
+
+
+
+    <script type="text/javascript">
+
+        let array = [1, 2, 3, 4, 5];
+        var filterData = array.filter(function (n) {
+            return n % 2 == 0;
+        })
+
+        var filterEs6 = array.filter(n => n % 2 == 0)
+
+        var filterEs = array.filter(n => n != 2)
+
+        console.log('-----total------', filterData);
+        console.log('-----filterEs6------', filterEs6);
+
+        console.log('-----filterEs------', filterEs);
+
+    </script>
+</body>
+
+</html>

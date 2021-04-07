@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Javascript Basic
+        </title>
+        
+      
+    </head>
+    <body>
+       
+      
+           
+        <script type="text/javascript"> 
+         
+         let c1 = {
+             x:1,
+             y:2
+        }
+         let c2 = {
+             x:3,
+             y:4
+        }
+
+        function print(){
+            console.log(this.x,'------------------',this.y)
+        }
+
+       var method =  print.bind(c2);
+       console.log('-----------',method());    
+
+          
+
+
+           
+        </script>    
+    </body>
+</html>

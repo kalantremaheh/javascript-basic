@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Javascript Basic
+        </title>
+        
+      
+    </head>
+    <body>
+       
+
+           
+        <script type="text/javascript"> 
+           let myObj = {
+               up:'up',
+               down:'down',
+               left:'left',
+               right:'right'
+           }
+
+           function testSwitch(args){
+            switch(args){
+                case myObj.up:
+                    console.log(myObj.up);
+                break;
+                case myObj.down:
+                    console.log(myObj.down);
+                break;
+                case myObj.left:
+                    console.log(myObj.left);
+                break;
+                case myObj.right:
+                    console.log(myObj.right);
+                break;
+           }
+           }
+          
+
+           console.log(testSwitch(myObj.up));
+           console.log(testSwitch(myObj.down));
+           console.log(testSwitch(myObj.left));
+           console.log(testSwitch(myObj.right));
+
+        </script>    
+    </body>
+</html>
